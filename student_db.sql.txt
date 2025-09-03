@@ -1,0 +1,16 @@
+
+
+```sql
+-- Create the database
+CREATE DATABASE IF NOT EXISTS student_db;
+USE student_db;
+
+-- Create the student_records table
+CREATE TABLE IF NOT EXISTS student_records (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    fullname VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    department VARCHAR(100) NOT NULL,
+    matric VARCHAR(50) NOT NULL
+);
+```

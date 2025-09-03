@@ -1,0 +1,68 @@
+`php
+<?php
+// Connect to the database
+conn = new mysqli("localhost", "root", "", "student_db");
+
+if (conn->connect_error) {
+    die("Connection failed: " . conn->connect_error);
+
+
+// Fetch all studentssql = "SELECT * FROM student_records ORDER BY id DESC";
+result =conn->query(sql);
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registered Students</title>
+    <style>
+        table 
+            width: 80
+            margin: 20px auto;
+            border-collapse: collapse;
+        
+
+        th, td 
+            padding: 12px;
+            border: 1px solid #333;
+            text-align: center;
+        
+
+        th 
+            background-color: #444;
+            color: #fff;
+        
+
+        h2 
+            text-align: center;
+        
+    </style>
+</head>
+<body>
+    <h2>Registered Student Records</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Department</th>
+            <th>Matric No</th>
+        </tr>
+
+        <?php
+        if (result->num_rows > 0) {
+            while (row =result->fetch_assoc()) {
+                echo "<tr>
+                        <td>{row['id']</td>
+<td>row['fullname']}</td>
+                        <td>{row['email']</td>
+                        <td>row['department']}</td>
+                        <td>{row['matric']</td>
+                      </tr>";
+             else 
+            echo "<tr><td colspan='5'>No records found.</td></tr>";conn->close();
+        ?>
+    </table>
+</body>
+</html>
+```
