@@ -3,7 +3,9 @@ Student Registration System
 
 Submitted by:
 Name: OKON TREASURE EFFIONG
+
 Reg No: 23/CSC/206 
+
 COURSE CODE: CSC 282
 
 Description:
