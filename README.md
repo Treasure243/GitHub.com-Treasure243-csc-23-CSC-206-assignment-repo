@@ -2,8 +2,9 @@
 Student Registration System
 
 Submitted by:
-Name: Okon, Treasure Effiong  
-Reg No: 23/CSC/206  
+Name: OKON TREASURE EFFIONG
+Reg No: 23/CSC/206 
+COURSE CODE: CSC 282
 
 Description:
 This is a simple web-based student registration system built using PHP and MySQL. It allows users to register students with their full name, email, department, and matric number, and stores the data in a MySQL database.
